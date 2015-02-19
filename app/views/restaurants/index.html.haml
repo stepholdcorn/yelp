@@ -5,7 +5,9 @@
 		= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete
 		= link_to "Review #{restaurant.name}", new_restaurant_review_path(restaurant)
 
-		%h3 
+		%h3 Average rating: #{restaurant.average_rating.to_i}
+
+		%h3
 			Reviews for
 			= restaurant.name
 		- if restaurant.reviews.any?
