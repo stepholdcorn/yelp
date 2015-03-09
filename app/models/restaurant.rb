@@ -1,6 +1,7 @@
 class Restaurant < ActiveRecord::Base
 
   has_many :reviews, dependent: :destroy
+  belongs_to :user
   validates :name, length: { minimum: 3 }, uniqueness: true
 
   def average_rating
@@ -8,4 +9,7 @@ class Restaurant < ActiveRecord::Base
     reviews.inject(0) { |memo, review| memo + review.rating } / reviews.count
   end
 
+  def created_by?(user)
+    self.user == user
+  end
 end

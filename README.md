@@ -1,5 +1,7 @@
 Yelp
 =======================
+[![Code Climate](https://codeclimate.com/github/stepholdcorn/yelp/badges/gpa.svg)](https://codeclimate.com/github/stepholdcorn/yelp)
+[![Test Coverage](https://codeclimate.com/github/stepholdcorn/yelp/badges/coverage.svg)](https://codeclimate.com/github/stepholdcorn/yelp)
 
 ## Synopsis
 
